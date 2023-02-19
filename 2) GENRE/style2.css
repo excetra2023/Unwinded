@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.music-item .item-icon .material-symbols-rounded {
+  color: var(--primary);
+  font-size: 3rem;
+}
+
+
+.material-symbols-rounded {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' -25, 'opsz' 24;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  user-select: none;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 45px;
+  z-index: 10;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 102px;
+}
+
+.header .container {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: fixed;
+  background-color: black;
+  z-index: 10;
+}
+
+.header .container .logo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .container .logo .text {
+  display: inline-block;
+  position: relative;
+  left: 58px;
+  top: -58px;
+  font-family: URW Chancery L, cursive;
+}
+
+.header .container .logo .text p {
+  color: #ffffff;
+  font-size: 20px;
+
+  font-weight: bolder;
+  font-style: oblique;
+  border-bottom: 2px solid #ffffff;
+}
+
+.header .container .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 534px;
+  width: 100%;
+}
+
+.header .container .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.header .container .nav ul li {
+  min-height: 20px;
+}
+
+.header .container .nav ul li + li {
+  padding-left: 10px;
+}
+
+.header .container .nav ul li:nth-child(1) {
+  width: 50px;
+}
+
+.header .container .nav ul li:nth-child(2) {
+  width: 110px;
+}
+
+.header .container .nav ul li:nth-child(3) {
+  width: 90px;
+}
+
+.header .container .nav ul li:nth-child(4) {
+  width: 105px;
+}
+
+.header .container .nav ul li a {
+  width: 100%;
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  -webkit-transition: font-weight 0.5s;
+  transition: font-weight 0.5s;
+}
+
+.header .container .nav ul li a:hover {
+  color: #6b1d57;
+  font-weight: 700;
+  height: 2px;
+  border-bottom: 2px solid #6b1d57;
+  padding-bottom: 5px;
+  border-width: 70%;
+}
+
+.header .container .nav ul li a.btn {
+  display: block;
+  width: 120px;
+  text-align: center;
+  height: 50px;
+  -webkit-box-shadow: 0 8px 8px rgba(67, 66, 93, 0.25);
+  box-shadow: 0 8px 8px rgba(67, 66, 93, 0.25);
+  border-radius: 6px;
+  color: #6b1d57;
+  border: 1px solid rgb(107, 29, 87);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+}
+
+.header .container .nav ul li a.btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.header .container .nav ul li:nth-child(5) a:hover {
+  border: none;
+}
+
+.header .container .nav ul li:nth-child(5) a img {
+  position: relative;
+  top: -2px;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--background-opacity);
+  min-width: 250px;
+  width: 100%;
+  height: 64px;
+  padding-inline: 16px;
+  justify-content: space-between;
+  backdrop-filter: blur(50px);
+  box-shadow: var(--shadow-1);
+  z-index: 2;
+}
+
+.logo { gap: 12px; }
+
+
+
+@media all and (max-width: 724px) {
+    .nav {
+      margin: 0 auto;
+    }
+  }

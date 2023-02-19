@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+div.left-col {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  line-height: 10rem;
+  left: auto;
+  top: 100px;
+  width: 500px;
+}
+
+div.right-col {
+  position: relative;
+  top: 40px;
+  left: 900px;
+  right: 100px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  padding-left: 190px;
+}
+
+.container .content .right-col {
+  float: right;
+  margin-right: 7%;
+  margin-top: 12rem;
+  display: flex;
+  align-items: center;
+}
+
+.container .content .right-col p {
+  font-size: 1.8rem;
+  color: #5f5f5f;
+  font-weight: bold;
+  margin-right: 1.5rem;
+}
+.Songs-button {
+  height: 180vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.Songs-button .texto h2 > span {
+  padding-top: 15px;
+  padding-bottom: auto;
+  padding-left: auto;
+  display: block;
+  font-weight: bold;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.2rem;
+}
+
+.Songs-button .container-songs .lolbutt a > button {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background: #712149;
+  padding: 20px 80px;
+  border: none;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 25px rgba(145, 102, 182, 0.4);
+}
+.Songs-button .container-songs .lolbutt a > button:not(:last-child) {
+  border-bottom: none;
+}
+
+
+.about-area {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.about-area .about-image > img {
+  padding-right: 15rem;
+  padding-top: 15rem;
+  width: 60rem;
+  float: right;
+}
+
+.about-area .about-title h2 > span {
+  padding-top: 15rem;
+  padding-bottom: 3rem;
+  padding-left: 2.5rem;
+  display: block;
+  font-weight: bold;
+  font-size: 5rem;
+  color: black;
+  letter-spacing: 0.2rem;
+}
+
+.about-area .about-title .paragraph > p {
+  font-size: 1.5rem;
+  padding-left: 2.5rem;
+  max-width: 45%;
+  padding-bottom: 2rem;
+  color: #5f5f5f;
+}
+
+.about-area .about-title a > button {
+  font-size: 1.5rem;
+  margin-left: 2.5rem;
+  border: 0.3rem solid;
+  padding: 0.5rem 0.5rem;
+  position: relative;
+  background-clip: padding-box;
+  background: white;
+  color: #eca7a6;
+  font-weight: bold;
+  border-width: 0.3rem;
+  border-radius: 0.4rem;
+  border-color: #eca7a6;
+  transition: background 0.1s ease;
+}
+
+.about-area .about-title a > button:hover {
+  background: #eca7a6;
+  color: white;
+  background-clip: padding-box;
+}
+
+.footer-distributed {
+  background-color: #000000;
+  box-shadow: 0 1px 1px 0 rgb(0, 0, 0);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+  color: #000000;
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease 0.25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease 0.25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #000000;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all 0.25s;
+}
+
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+  .about-area .about-image > img {
+    width: 50%;
+    padding-left: 4rem;
+  }
+
+  .footer-area .social-media {
+    padding-top: 41rem;
+  }
+}
+
+@media (max-width: 540px) {
+  html {
+    font-size: 45%;
+  }
+  .about-area .about-image > img {
+    width: 80%;
+  }
+
+  .about-area .about-title .paragraph > p {
+    color: #5f5f5f;
+    padding: 0 3rem;
+  }
+
+  .about-area .about-title h2 > span {
+    padding-top: 55rem;
+  }
+
+  .about-area .about-title a > button {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 45%;
+  }
+  .about-area .about-image > img {
+    width: 100%;
+    padding: 17rem 10rem;
+  }
+
+  .about-area .about-title h2 > span {
+    padding-left: 3.5rem;
+  }
+
+  .about-area .about-title .paragraph > p {
+    padding: 0rem 3rem;
+    max-width: fit-content;
+  }
+
+  .about-area .about-title a > button {
+    margin-top: 2rem;
+  }
+
+  .footer-area .social-media {
+    padding-top: 9.5rem;
+  }
+
+  #icon {
+    width: 40%;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 40%;
+  }
+
+  .about-area .about-image > img {
+    padding: 15rem 10rem;
+  }
+
+  .about-area .about-title .paragraph > p {
+    padding-right: 5rem;
+    padding-left: 5rem;
+    max-width: fit-content;
+  }
+
+  .about-area .about-title h2 > span {
+    padding-left: 12rem;
+  }
+
+  .about-area .about-title a > button {
+    margin-left: 21.5rem;
+  }
+
+  .footer-area .social-media {
+    padding-top: 14rem;
+  }
+
+  #icon {
+    width: 30%;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 40%;
+  }
+  .container .content .right-col {
+    float: right;
+    margin-right: 1%;
+    margin-top: 8rem;
+  }
+
+  .about-area .about-image > img {
+    width: 110%;
+    padding-left: 17rem;
+  }
+
+  .about-area .about-title h2 > span {
+    padding-left: 9rem;
+  }
+
+  .about-area .about-title a > button {
+    margin-left: 18.5rem;
+  }
+
+  .about-area .about-title .paragraph > p {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+
+  .footer-area h1 {
+    font-size: 2.25rem;
+  }
+
+  .footer-area .social-media {
+    padding-top: 8.5rem;
+  }
+
+  #icon {
+    width: 30%;
+  }
+}
+
+@media (max-width: 280px) {
+  html {
+    font-size: 40%;
+  }
+}
